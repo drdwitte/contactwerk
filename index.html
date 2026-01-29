@@ -3,21 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contactwerk</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Contactwerk | ICT voor zorg en erfgoed</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#292F8E',
+            accent: '#FE8202',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-  <header class="site-header">
-    <img src="assets/logo.svg" alt="Contactwerk logo" class="logo">
+<body class="bg-gray-50">
+  
+  <!-- Header/Navigation -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex items-center gap-6 md:gap-12">
+        <img src="assets/LogoContactwerk.png" alt="Contactwerk logo" class="h-48 sm:h-64 md:h-80 lg:h-96">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+          ICT voor erfgoed en zorg
+        </h1>
+      </div>
+    </div>
   </header>
 
-  <main class="hero">
-    <h1>AI op maat voor zorg en erfgoed</h1>
-    <p>
-      Contactwerk bouwt begrijpbare en betrouwbare AI-oplossingen,
-      vertrekkend vanuit menselijk contact.
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 text-center">
+      Contactwerk is AI en ICT-maatwerk voor nonprofits
+    </h2>
+    <p class="text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+      Na 4 jaar als professor toegepaste AI voor erfgoed en zorg willen wij:
     </p>
-    <a href="mailto:info@contactwerk.be" class="cta">Neem contact op</a>
-  </main>
+    
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+      
+      <!-- Card 1 -->
+      <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-accent">
+        <div class="w-14 h-14 bg-accent rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Snel schakelen</h3>
+        <p class="text-gray-600">
+          Korter op de bal spelen, geen projectaanvraag
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-accent">
+        <div class="w-14 h-14 bg-accent rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Transparant</h3>
+        <p class="text-gray-600">
+          Denken in functie van de instelling niet met een dubbele agenda (bv. onderzoek)
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-accent">
+        <div class="w-14 h-14 bg-accent rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Passie</h3>
+        <p class="text-gray-600">
+          Tegen een correcte prijs maar met veel passie voor het domain
+        </p>
+      </div>
+
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="mailto:info@contactwerk.be" 
+         class="inline-block bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
+        Neem contact op
+      </a>
+      <a href="#diensten" 
+         class="inline-block bg-white text-accent px-8 py-3 rounded-lg font-semibold border-2 border-accent hover:bg-orange-50 transition">
+        Ontdek meer
+      </a>
+    </div>
+  </section>
+
+  <!-- Features/Diensten Section -->
+  <section id="diensten" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Onze aanpak</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Betrouwbaar</h3>
+          <p class="text-gray-600">
+            AI-oplossingen die transparant zijn en waarbij je begrijpt hoe beslissingen tot stand komen.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Menselijk</h3>
+          <p class="text-gray-600">
+            We vertrekken altijd vanuit menselijk contact en begrijpen de noden van jouw sector.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Op maat</h3>
+          <p class="text-gray-600">
+            Elke organisatie is uniek. We bouwen oplossingen die perfect aansluiten bij jouw specifieke uitdagingen.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectoren Section -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Gespecialiseerd in</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        
+        <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">🏥 Zorg</h3>
+          <p class="text-gray-600">
+            AI-toepassingen voor patiëntenzorg, administratieve processen en medische besluitvorming.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">🏛️ Erfgoed</h3>
+          <p class="text-gray-600">
+            Digitalisering, archivering en toegankelijkheid van cultureel erfgoed met moderne AI-technologie.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-accent py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+        Klaar om te starten?
+      </h2>
+      <p class="text-xl text-orange-100 mb-8">
+        Laten we in gesprek gaan over hoe AI jouw organisatie kan versterken.
+      </p>
+      <a href="mailto:info@contactwerk.be" 
+         class="inline-block bg-white text-accent px-8 py-3 rounded-lg font-semibold hover:bg-orange-50 transition">
+        info@contactwerk.be
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-gray-400 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p>&copy; 2026 Contactwerk. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
